@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+div[style*="marginBottom"] {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"]:not([placeholder*="Enter"]) {
+  padding: 10px 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+input[type="text"]:not([placeholder*="Enter"]):focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+td[colspan="5"] {
+  text-align: center;
+  color: #999;
+  padding: 30px;
+}
+
+div > div:last-child {
+  background-color: white;
+  padding: 25px;
+  border-radius: 4px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 8px;
+  margin-right: 15px;
+  font-weight: bold;
+  color: #333;
+  vertical-align: middle;
+}
+
+input[type="text"][placeholder*="Enter"] {
+  display: inline-block;
+  width: calc(75% - 15px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  vertical-align: middle;
+}
+
+input[type="text"][placeholder*="Enter"]:focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[onclick*="addCourse"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+button[onclick*="addCourse"]:hover {
+  background-color: #45a049;
+}
+
+button[onclick*="updateCourse"] {
+  background-color: #2196F3;
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+button[onclick*="updateCourse"]:hover {
+  background-color: #0b7dda;
+}
+
+button[onclick*="deleteCourse"] {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+button[onclick*="deleteCourse"]:hover {
+  background-color: #da190b;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  input[type="text"]:not([placeholder*="Enter"]) {
+    width: 100%;
+  }
+
+  div > div:last-child {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  button[onclick*="updateCourse"],
+  button[onclick*="deleteCourse"] {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 8px 5px;
+  }
+
+  button {
+    padding: 8px 12px;
+    margin: 3px;
+  }
+
+  button[onclick*="addCourse"] {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
